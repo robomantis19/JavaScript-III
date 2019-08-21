@@ -40,7 +40,7 @@ GameObject.prototype.destroy = function(){
 
 function CharacterStats(attribute){
   GameObject.call(this, attribute),
-  this.healthpoints = attribute.healthpoints
+  this.healthPoints = attribute.healthPoints
 
   
   
@@ -71,7 +71,7 @@ function Humanoid(attribute){
 Humanoid.prototype = Object.create(CharacterStats.prototype);
 Humanoid.prototype.greet = function(){
 
-  return `${GameObject.call(this, name)}, offers agreeting in ${this.language}`
+  return `${this.name}, offers agreeting in ${this.language}`
 }
  console.log(Humanoid);
 /*
